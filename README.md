@@ -2,6 +2,8 @@
 
 **To-Done** is an interactive, glassmorphic todo list editor for Markdown task files. It automatically registers as the default editor for any Markdown files matching the pattern `**/todo*.md` or `**/ToDo*.md` (e.g. `todo.md`, `ToDo_tasks.md`, `Todo.md`).
 
+![To-Done Extension Showcase](resources/image.png)
+
 ## Features
 
 - **Add Header Button**:
@@ -61,36 +63,18 @@ To publish the extension so anyone can install it, follow these steps:
    - **Publisher ID**: Use a unique ID (e.g. `aditya-bhat`).
    - **Display Name**: `Aditya Bhat`.
 
-### Step 2: Generate an Azure DevOps Personal Access Token (PAT)
-VS Code uses a Personal Access Token to authenticate publishing commands.
-1. Log in to [Azure DevOps](https://aex.dev.azure.com/).
-2. Create an organization if you don't have one (the default is fine).
-3. In the top-right corner, click the **User settings** icon and select **Personal access tokens**.
-4. Click **New Token**:
-   - **Name**: `VS Code Publishing`
-   - **Organization**: Select `All accessible organizations`.
-   - **Scopes**: Choose **Custom defined** -> click **Show all scopes** at the bottom -> find **Marketplace** -> check **Acquire** and **Manage**.
-5. Click **Create** and copy the generated token. **Save it somewhere safe** as you will not be able to see it again.
-
-### Step 3: Publish the Extension
-You can publish either via the terminal or by uploading the file manually.
-
-#### Option A: Publish via Terminal (CLI)
-1. In your terminal inside `todo_tasks_vsce`, run the login command:
+### Step 2: Package the Extension
+Make sure your extension is packaged into a `.vsix` file:
+1. Open your terminal inside the project directory.
+2. Run:
    ```bash
-   npx @vscode/vsce login aditya-bhat
+   npx @vscode/vsce package
    ```
-   *(Replace `aditya-bhat` with your actual Publisher ID).*
-2. Paste the Personal Access Token (PAT) you copied from Step 2 when prompted.
-3. Publish your extension by running:
-   ```bash
-   npx @vscode/vsce publish
-   ```
-4. Once successfully uploaded, it will take a few minutes for the marketplace to verify and scan the package. It will then be live!
+3. This creates a file named `to-done-1.0.0.vsix` in the directory.
 
-#### Option B: Upload Manually via Web Portal
+### Step 3: Upload Manually via Web Portal
 1. Open the [Visual Studio Marketplace Management Portal](https://marketplace.visualstudio.com/manage).
-2. Click on your publisher name (`Aditya Bhat`).
+2. Click on your publisher name (e.g. `Aditya Bhat`).
 3. Click the **New Extension** button and choose **Visual Studio Code**.
 4. Drag and drop the packaged `to-done-1.0.0.vsix` file.
 5. Click **Upload**. Your extension will undergo a quick automated check and then become publicly available.

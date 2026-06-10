@@ -1,0 +1,43 @@
+{
+  "name": "todo-tasks",
+  "displayName": "ToDo Tasks",
+  "description": "Interactive todo list editor for markdown task files with inline editing, nested indentation, and one-click progress toggles.",
+  "version": "1.0.0",
+  "publisher": "aditya-bhat",
+  "author": "Aditya Bhat",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "main": "./extension.js",
+  "icon": "resources/icon.png",
+  "categories": [
+    "Productivity",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCustomEditor:todo-tasks.editor"
+  ],
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "todo-tasks.editor",
+        "displayName": "ToDo Tasks",
+        "selector": [
+          {
+            "filenamePattern": "**/todo*.md"
+          },
+          {
+            "filenamePattern": "**/ToDo*.md"
+          },
+          {
+            "filenamePattern": "**/Todo*.md"
+          }
+        ],
+        "priority": "default"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0"
+  }
+}

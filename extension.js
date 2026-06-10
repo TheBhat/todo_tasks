@@ -17,7 +17,7 @@ class TodoCustomEditorProvider {
    */
   static register(context, provider) {
     return vscode.window.registerCustomEditorProvider(
-      'to-done.editor',
+      'todo-plus-plus.editor',
       provider,
       {
         webviewOptions: {
@@ -169,7 +169,7 @@ class TodoCustomEditorProvider {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-Done</title>
+  <title>Todo++</title>
   <link rel="stylesheet" href="${cssUri}">
 </head>
 <body>

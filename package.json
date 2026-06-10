@@ -1,6 +1,6 @@
 {
-  "name": "to-done",
-  "displayName": "To-Done",
+  "name": "todo-plus-plus",
+  "displayName": "Todo++",
   "description": "Interactive todo list editor for markdown task files with inline editing, nested indentation, and one-click progress toggles.",
   "version": "1.0.0",
   "publisher": "aditya-bhat",
@@ -23,13 +23,13 @@
     "Other"
   ],
   "activationEvents": [
-    "onCustomEditor:to-done.editor"
+    "onCustomEditor:todo-plus-plus.editor"
   ],
   "contributes": {
     "customEditors": [
       {
-        "viewType": "to-done.editor",
-        "displayName": "To-Done",
+        "viewType": "todo-plus-plus.editor",
+        "displayName": "Todo++",
         "selector": [
           {
             "filenamePattern": "**/todo*.md"

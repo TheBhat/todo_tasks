@@ -1,6 +1,6 @@
 {
-  "name": "todo-plus-plus",
-  "displayName": "Todo++",
+  "name": "nexdo",
+  "displayName": "NexDo",
   "description": "Interactive todo list editor for markdown task files with inline editing, nested indentation, and one-click progress toggles.",
   "version": "1.0.0",
   "publisher": "aditya-bhat",
@@ -23,13 +23,13 @@
     "Other"
   ],
   "activationEvents": [
-    "onCustomEditor:todo-plus-plus.editor"
+    "onCustomEditor:nexdo.editor"
   ],
   "contributes": {
     "customEditors": [
       {
-        "viewType": "todo-plus-plus.editor",
-        "displayName": "Todo++",
+        "viewType": "nexdo.editor",
+        "displayName": "NexDo",
         "selector": [
           {
             "filenamePattern": "**/todo*.md"

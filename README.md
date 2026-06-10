@@ -1,8 +1,8 @@
-# Todo++ VS Code Extension
+# NexDo VS Code Extension
 
-**Todo++** is an interactive, glassmorphic todo list editor for Markdown task files. It automatically registers as the default editor for any Markdown files matching the pattern `**/todo*.md` or `**/ToDo*.md` (e.g. `todo.md`, `ToDo_tasks.md`, `Todo.md`).
+**NexDo** is an interactive, glassmorphic todo list editor for Markdown task files. It automatically registers as the default editor for any Markdown files matching the pattern `**/todo*.md` or `**/ToDo*.md` (e.g. `todo.md`, `ToDo_tasks.md`, `Todo.md`).
 
-![Todo++ Extension Showcase](resources/image.png)
+![NexDo Extension Showcase](resources/image.png)
 
 ## Features
 
@@ -31,7 +31,7 @@ You can test the extension locally using one of the following two methods:
 3. If no configuration exists, click "create a launch.json file" and choose "Extension Development". If it's already set up, select **Run Extension** (or press **`F5`**).
 4. A new VS Code window (the "Extension Development Host") will open with the extension pre-loaded.
 5. In this new window, open or create a file named `ToDo_test.md` (e.g. containing `- [ ] My Task`).
-6. It will automatically open in the **Todo++** interactive editor!
+6. It will automatically open in the **NexDo** interactive editor!
 7. *Tip: You can right-click the file tab and select "Open With..." -> "Text Editor" to view or edit the raw markdown and see it sync in real-time.*
 
 ### Method 2: Package and Install Locally (As a .vsix File)
@@ -42,10 +42,10 @@ To test the extension as an installed package:
    ```bash
    npx @vscode/vsce package
    ```
-3. This creates a file named `todo-plus-plus-1.0.0.vsix` in the directory.
+3. This creates a file named `nexdo-1.0.0.vsix` in the directory.
 4. Install this extension into your active VS Code/Cursor editor using:
    ```bash
-   code --install-extension todo-plus-plus-1.0.0.vsix
+   code --install-extension nexdo-1.0.0.vsix
    ```
    *(If you are using Cursor, replace `code` with `cursor` in the command).*
 5. Restart or reload your editor.
@@ -70,11 +70,11 @@ Make sure your extension is packaged into a `.vsix` file:
    ```bash
    npx @vscode/vsce package
    ```
-3. This creates a file named `todo-plus-plus-1.0.0.vsix` in the directory.
+3. This creates a file named `nexdo-1.0.0.vsix` in the directory.
 
 ### Step 3: Upload Manually via Web Portal
 1. Open the [Visual Studio Marketplace Management Portal](https://marketplace.visualstudio.com/manage).
 2. Click on your publisher name (e.g. `Aditya Bhat`).
 3. Click the **New Extension** button and choose **Visual Studio Code**.
-4. Drag and drop the packaged `todo-plus-plus-1.0.0.vsix` file.
+4. Drag and drop the packaged `nexdo-1.0.0.vsix` file.
 5. Click **Upload**. Your extension will undergo a quick automated check and then become publicly available.

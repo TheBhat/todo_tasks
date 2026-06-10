@@ -1,4 +1,4 @@
-# ToDo Tasks Launch Checklist
+# To-Done Launch Checklist
 
 ## Phase 1: Core Features
 - [x] Create VS Code custom text editor provider extension <!-- c: 2026-06-09 22:48, u: 2026-06-09 22:48 -->

@@ -19,7 +19,6 @@
   "main": "./extension.js",
   "icon": "resources/icon.png",
   "categories": [
-    "Productivity",
     "Other"
   ],
   "activationEvents": [
